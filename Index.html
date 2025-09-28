@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Controle de Apostas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Controle de Apostas</h1>
+
+    <form id="apostaForm">
+      <input type="date" id="data" required>
+      <input type="text" id="descricao" placeholder="Descrição da aposta">
+      <input type="number" id="valor" placeholder="Valor investido" required>
+      <input type="number" id="retorno" placeholder="Retorno obtido" required>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <h2>Resumo</h2>
+    <div class="resumo">
+      <p>💰 Diário: <span id="lucroDiario">0</span></p>
+      <p>📅 Semanal: <span id="lucroSemanal">0</span></p>
+      <p>📆 Mensal: <span id="lucroMensal">0</span></p>
+    </div>
+
+    <h2>Histórico</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Descrição</th>
+          <th>Investido</th>
+          <th>Retorno</th>
+          <th>Lucro/Prejuízo</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaApostas"></tbody>
+    </table>
+
+    <h2>Gráficos</h2>
+    <canvas id="graficoDiario"></canvas>
+    <canvas id="graficoAcumulado"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
