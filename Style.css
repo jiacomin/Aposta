@@ -1,1 +1,72 @@
+body {
+      font-family: Arial, sans-serif;
+        background: #f4f6f9;
+          margin: 0;
+            padding: 0;
+              color: #333;
+              }
 
+              .container {
+                max-width: 900px;
+                  margin: auto;
+                    padding: 20px;
+                    }
+
+                    h1, h2 {
+                      text-align: center;
+                      }
+
+                      form {
+                        display: flex;
+                          flex-wrap: wrap;
+                            gap: 10px;
+                              margin-bottom: 20px;
+                                justify-content: center;
+                                }
+
+                                form input, form button {
+                                  padding: 10px;
+                                    font-size: 14px;
+                                    }
+
+                                    form button {
+                                      background: #4CAF50;
+                                        color: white;
+                                          border: none;
+                                            cursor: pointer;
+                                            }
+
+                                            form button:hover {
+                                              background: #45a049;
+                                              }
+
+                                              .resumo {
+                                                display: flex;
+                                                  justify-content: space-around;
+                                                    font-size: 18px;
+                                                      margin-bottom: 20px;
+                                                      }
+
+                                                      table {
+                                                        width: 100%;
+                                                          border-collapse: collapse;
+                                                            margin-bottom: 20px;
+                                                            }
+
+                                                            table, th, td {
+                                                              border: 1px solid #ddd;
+                                                              }
+
+                                                              th, td {
+                                                                padding: 8px;
+                                                                  text-align: center;
+                                                                  }
+
+                                                                  canvas {
+                                                                    margin: 20px 0;
+                                                                      background: #fff;
+                                                                        border-radius: 8px;
+                                                                          padding: 10px;
+                                                                          }
+                                                                          
+}
